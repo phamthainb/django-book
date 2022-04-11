@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('author', models.CharField(max_length=200)),
                 ('description', models.CharField(default=None, max_length=500)),
                 ('price', models.FloatField(blank=True, null=True)),
-                ('image_url', models.CharField(default=False, max_length=2083)),
+                ('image', models.CharField(default=False, max_length=2083)),
                 ('follow_author', models.CharField(blank=True, max_length=2083)),
                 ('book_available', models.BooleanField(default=False)),
             ],

@@ -18,7 +18,7 @@ class BookTest(TestCase):
             author = 'WS Vincent',
             description = 'anything',
             price = '30',
-            image_url = 'https://forexample.jpg',
+            image = 'https://forexample.jpg',
             follow_author = 'https://twitter.com/wsv3000?lang=en',
             book_available = 'True',
         )
@@ -32,7 +32,7 @@ class BookTest(TestCase):
         self.assertEqual(f'{self.book.author}', 'WS Vincent')
         self.assertEqual(f'{self.book.description}', 'anything')
         self.assertEqual(f'{self.book.price}', '30')
-        self.assertEqual(f'{self.book.image_url}', 'https://forexample.jpg')
+        self.assertEqual(f'{self.book.image}', 'https://forexample.jpg')
         self.assertEqual(f'{self.book.follow_author}', 'https://twitter.com/wsv3000?lang=en')
         self.assertEqual(f'{self.book.book_available}', 'True')
 
@@ -91,7 +91,7 @@ class BookTest(TestCase):
                 author = 'yash',
                 description = 'anything',
                 price = '30',
-                image_url = 'https://forexample.jpg',
+                image = 'https://forexample.jpg',
                 follow_author = 'https://twitter.com/wsv3000?lang=en',
                 book_available = 'False',   # out of stock when False
             )
